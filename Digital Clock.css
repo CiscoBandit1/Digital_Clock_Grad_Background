@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font:bold 12px Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.clock{
+    border: 1px solid #606060;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #222222;
+}
+#Date{
+    font-size: 20px !important;
+    text-align: center;
+}
+.clock ul{
+    list-style: none;
+    display: flex;
+    font-size: 90px;
+    gap: 15px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 30%);
+}
+#overlay {
+    position: absolute;
+    top: 5%;
+    left: 32%;
+    width: 50%, 50%;
+    height: 100%;
+    z-index: 2; /* Make sure it's above the gradient */
+}
